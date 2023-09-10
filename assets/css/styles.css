@@ -82,3 +82,11 @@ body {
     transition: 1s;
     transition-delay: 0.5s;
 }
+/* Sets parameters for the fourth span of continue button */
+.continue-btn span:nth-child(4) {
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #2196f3);
+}
