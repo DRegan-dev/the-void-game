@@ -148,3 +148,11 @@ body {
     padding-left: 100px;
     animation: flicker 1.5s infinite alternate;
 }
+/* Styles the paragraph that contains the premise of the game on the landing page */
+#game-premise {
+    color: black;
+    font-size: 25px;
+    text-shadow: 1px 1px white;
+    width: 800px;
+    padding-left: 200px;
+}
