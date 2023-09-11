@@ -181,3 +181,7 @@ body {
     padding: 0;
     left: 0;
 }
+/* Styling for div containg character dialogue */
+.dialoguewrapper {
+    overflow: hidden;
+}
