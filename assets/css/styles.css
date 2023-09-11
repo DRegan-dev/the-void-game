@@ -173,3 +173,11 @@ body {
     font-size: 25px;
     width: 800px;
 }
+/* Styling for background image */
+#neon-city {
+    width: 100px;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    left: 0;
+}
