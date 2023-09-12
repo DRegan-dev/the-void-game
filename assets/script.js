@@ -93,5 +93,14 @@ document.addEventListener("DOMContentLoaded", function() {
     // Get the element that will display the timer.
         timerContainer = document.getElementsByClassName("quiztimer")[0];
     // Sets the time limit for the quiz to 60 seconds.
+        timeLeft = 60;
+    // Starts the timer and decrements the time remaining every second.
+        timer = setInterval(() => {
+            timeLeft--;
+    // Updates the timer display.
+        timerContainer.textContent = `Time left ${timeLeft}s`;
+    // If the timer runs out this function ends the quiz.        
+        
+        })
     }
 })
