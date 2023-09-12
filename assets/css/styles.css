@@ -258,3 +258,7 @@ button:hover {
 .incorrect {
     background-color: red;
 }
+/* Styling for div containing the timer for the quiz */
+.quiztimer {
+    background-color: #2196f3;
+}
