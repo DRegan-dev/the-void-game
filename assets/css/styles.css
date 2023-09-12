@@ -201,3 +201,11 @@ body {
     width: 900px;
     color: black;
 }
+/* Styling for logo on quiz page */
+#quizlogo {
+    margin-left: 15px;
+}
+/* Styling for div that displays quiz questions */
+.quizquestions {
+    border: 10px;
+}
