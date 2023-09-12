@@ -262,3 +262,20 @@ button:hover {
 .quiztimer {
     background-color: #2196f3;
 }
+/* Styling for neon sign flicker effect */
+@keyframes flicker {
+    0%, 18%, 22%, 25%, 53%, 57%, 100% {
+        text-shadow: 
+            0 0 4px #fff,
+            0 0 11px #fff,
+            0 0 19px #fff
+            0 0 40px #fff
+            0 0 80px #fff
+            0 0 90px #fff
+            0 0 100px #fff
+            0 0 150px #fff;
+    }
+    20%, 24%, 55% {
+        text-shadow: none;
+    }
+}
