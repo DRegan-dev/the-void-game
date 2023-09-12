@@ -140,9 +140,22 @@ function displayQuestion() {
             this.classList.add("incorrect");    
         }
         console.log(score);
-//
-    })
+// Disable all answer buttons so the player cant change their answer.
+        let answerBtns = questionContainer.querySelectorAll(".answer-btn");
+        for (let k = 0; k < answerBtns.length; k++) {
+            answerBtns[k].disabled = true;
+        }
+        questionIndex++;
+        if (quistionIndex < questions.length) {
+            quizContainer.innerHTML = "";
+            displayQuestion();
+        } else {
+            endQuiz();
+        }
+    });
+    questionContainer.appendChild(answerBtn);
     }
 
 }
+// This
 })
