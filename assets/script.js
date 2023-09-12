@@ -170,5 +170,6 @@ function displayQuestion() {
         window.location.href = "#"
     }, 3000);
 }
+// Calls the displayQuestion function.
 displayQuestion();
 })
