@@ -250,3 +250,11 @@ button:hover {
     background: #2196f3;
     box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
 }
+/* styling for answer buttons if answer is correct */
+.correct {
+    background-color: green;
+}
+/* Styling for answer button if answer button is incorrect */
+.incorrect {
+    background-color: red;
+}
