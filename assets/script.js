@@ -129,6 +129,19 @@ function displayQuestion() {
         answerBtn.className = "answer-btn";
         answerBtn.textContent = questions[questionIndex].choices[j];
         questionContainer.appendChild(answerBtn);
+// Adds and event listener to each answer button that checks if the answer is correct. 
+    answerBtn.addEventListener("click", function() {
+        //if the answer is correct, this adds the class correct to the button and increases the players score.
+        if (this.textContent.charAt(0) === questions[questionIndex].answer) {
+            this.classList.add("correct");
+            score += 100;
+        } else {
+        // id the answer is incorrect, this adds the incorrect class to the button.
+            this.classList.add("incorrect");    
+        }
+        console.log(score);
+//
+    })
     }
 
 }
