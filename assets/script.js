@@ -99,8 +99,12 @@ document.addEventListener("DOMContentLoaded", function() {
             timeLeft--;
     // Updates the timer display.
         timerContainer.textContent = `Time left ${timeLeft}s`;
-    // If the timer runs out this function ends the quiz.        
+    // If the timer runs out this function ends the quiz.
+        if (timeLeft === 0) {
+            clearInterval(timer);
+            endQuiz();
+        }        
         
-        })
+        }, 1000);
     }
 })
