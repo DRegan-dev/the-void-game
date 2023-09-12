@@ -77,4 +77,21 @@ document.addEventListener("DOMContentLoaded", function() {
         answer: "C"
       }
     ];
+    // These variables are used to keep track of the player's score and current question number.
+    let score;
+    let questionIndex;
+    // These variable are used to keep track of the timer and remaining time.
+    let timerContainer;
+    let timeLeft;
+    let timer;
+    // This function runs the quiz.
+    function playQuiz(questions) {
+        console.log(questions);
+    //Initilize the score and questionIndex to 0.
+        score = 0;
+        questionIndex = 0;
+    // Get the element that will display the timer.
+        timerContainer = document.getElementsByClassName("quiztimer")[0];
+    // Sets the time limit for the quiz to 60 seconds.
+    }
 })
