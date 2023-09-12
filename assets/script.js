@@ -110,5 +110,6 @@ document.addEventListener("DOMContentLoaded", function() {
 // Calls the playQuiz function to start the quiz.
 playQuiz();
 // These variables are used to create and display the quiz questions and answer choices.
-let 
+let quizContainer;
+let questionContainer;
 })
