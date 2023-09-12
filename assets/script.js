@@ -157,5 +157,10 @@ function displayQuestion() {
     }
 
 }
-// This
+// This function removes content from the HTML file to display the end of the quiz
+    function endQuiz() {
+        clearInterval(timer);
+        quizContainer.innerHTML = "";
+        timerContainer.innerHTML = "";
+    }
 })
