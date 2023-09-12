@@ -112,4 +112,16 @@ playQuiz();
 // These variables are used to create and display the quiz questions and answer choices.
 let quizContainer;
 let questionContainer;
+//  This function displays current question and answer choices.
+function displayQuestion() {
+// Gets the element that will display the quiz question.
+    quizContainer = document.getElementsByClassName("quizquestions")[0];
+// Creates a new div element to hold the question and answer choices.
+    questionContainer = document.createElement("div");
+// Adds the question to the question container.
+    questionContainer.innHTML = `<p>Question ${questionIndex+1}: ${questions[questionIndex].question}</p>`;
+    quizContainer.appendChild(questionContainer);
+    console.log("hey whats up");
+
+}
 })
