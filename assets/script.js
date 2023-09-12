@@ -122,6 +122,14 @@ function displayQuestion() {
     questionContainer.innHTML = `<p>Question ${questionIndex+1}: ${questions[questionIndex].question}</p>`;
     quizContainer.appendChild(questionContainer);
     console.log("hey whats up");
+// Adds a button for each answer choice.
+    let answerBtn;
+    for (let j = 0; j < questions[questionIndex].choices.length; j++) {
+        answerBtn = document.createElement("button");
+        answerBtn.className = "answer-btn";
+        answerBtn.textContent = questions[questionIndex].choices[j];
+        questionContainer.appendChild(answerBtn);
+    }
 
 }
 })
