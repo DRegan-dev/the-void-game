@@ -162,5 +162,13 @@ function displayQuestion() {
         clearInterval(timer);
         quizContainer.innerHTML = "";
         timerContainer.innerHTML = "";
-    }
+// Adds the final score to the HTML
+    let finalScore = document.createElement("p");
+    finalScore.textContent = `You have Saved ${score} out of ${questions.length+1485} people.`;
+    quizContainer.appendChild(finalScore);
+    setTimeout(() => {
+        window.location.href = "#"
+    }, 3000);
+}
+displayQuestion();
 })
