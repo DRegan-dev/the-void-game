@@ -150,7 +150,7 @@ body {
 }
 /* Styles the paragraph that contains the premise of the game on the landing page */
 #game-premise {
-    color: black;
+    color: #2196f3;
     font-size: 25px;
     text-shadow: 1px 1px white;
     width: 800px;
